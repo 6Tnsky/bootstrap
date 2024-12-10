@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пельмени - Лучшие пельмени в городе</title>
+  <!-- Подключение Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3">Пельмени</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+
+<main class="mt-4">
+  <div class="container">
+    <!-- Секция слайдера -->
+    <section class="mb-5">
+      <style>
+        .carousel-inner img {
+          height: 400px; /* Установите нужную высоту */
+          object-fit: cover; /* Картинки будут обрезаны, чтобы заполнить контейнер */
+        }
+      </style>
+      <div id="pelmeniCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="1.jpg" class="d-block w-100" alt="Пельмени 1">
+          </div>
+          <div class="carousel-item">
+            <img src="2.jpg" class="d-block w-100" alt="Пельмени 2">
+          </div>
+          <div class="carousel-item">
+            <img src="3.jpg" class="d-block w-100" alt="Пельмени 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#pelmeniCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#pelmeniCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </section>
+
+      <!-- Секция карточек -->
+      <section class="mb-5">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="7.jpg" class="card-img-top" alt="Классические пельмени">
+              <div class="card-body">
+                <h5 class="card-title">Классические пельмени</h5>
+                <p class="card-text">Вкусные традиционные пельмени с мясной начинкой.</p>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="5.jpg" class="card-img-top" alt="Сибирские пельмени">
+              <div class="card-body">
+                <h5 class="card-title">Сибирские пельмени</h5>
+                <p class="card-text">Сочные пельмени с уникальным вкусом Сибири.</p>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <img src="6.jpg" class="card-img-top" alt="Вегетарианские пельмени">
+              <div class="card-body">
+                <h5 class="card-title">Вегетарианские пельмени</h5>
+                <p class="card-text">Идеальный выбор для тех, кто не ест мясо.</p>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+                        </div>
+        </div>
+      </section>
+
+      <!-- Секция аккордеона -->
+      <section class="mb-5">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Какой срок хранения пельменей?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Наши пельмени можно хранить в морозильной камере до 6 месяцев.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Из чего сделаны ваши пельмени?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Мы используем только свежие и натуральные ингредиенты: муку высшего сорта, мясо и специи.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Есть ли доставка?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Да, мы доставляем пельмени по всему городу. Заказы принимаются ежедневно.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Футер -->
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center">
+      <p>&copy; 2023 Пельмени. Все права защищены.</p>
+      <p>Контакты: +7 (123) 456-78-90 | email@example.com</p>
+      <p>Мы в соцсетях:
+        <a href="#" class="text-white me-2">ВКонтакте</a> |
+        <a href="#" class="text-white ms-2">Instagram</a> |
+        <a href="#" class="text-white ms-2">Facebook</a></p>
+    </div>
+  </footer>
+
+  <!-- Подключение Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
